@@ -21,8 +21,24 @@
   @media (min-width: px-to-em(279px)) {
     padding-top: 71px;
   }
-    //max-width: 73.125rem;
-    //margin: 0 auto;
+
+  @media (min-width: px-to-em(1000px)) {
+    display: flex;
+    max-width: px-to-rem(1170px);
+    margin: 0 auto;
+
+    .sidebar {
+      width: 25%;
+      order: 2;
+      padding-left: px-to-rem(7.5px);
+    }
+
+    .content {
+      width: 75%;
+      order: 1;
+      padding-right: px-to-rem(7.5px);
+    }
+  }
 }
 
 
