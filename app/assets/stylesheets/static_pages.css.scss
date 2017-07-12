@@ -48,3 +48,18 @@
 .persona-img {
     width: 100%;
 }
+
+blockquote {
+  display: block;
+  font: times;
+  font-size: 25px;
+
+}
+
+blockquote::before {
+  content: "\201C";
+}
+
+blockquote::after {
+  content: "\201D";
+}
