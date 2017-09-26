@@ -2,6 +2,75 @@
 // // They will automatically be included in application.css.
 // // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@import "./_variables";
+@import "./connect";
+
+//convert px value to rem value
+@function px-to-rem($px, $base:10px){
+  @return ($px / $base) * 1rem;
+}
+
+* {
+    color: #333333;
+}
+
+a:link {
+    color: #333333;
+}
+
+.top-right-sidebar {
+  @media (min-width: 34.375em) {
+    display: flex;
+    padding: 0.938rem;
+
+    .primary {
+      order: 1;
+      width: 66.666%;
+      padding-right: 0.469rem;
+    }
+
+    .sidebar {
+      order: 2;
+      width: 33.333%;
+      padding-left: 0.469rem;
+    }
+  }
+  @media (min-width: 63.75em) {
+    .primary {
+      width: 75%;
+    }
+
+    .sidebar {
+      width: 25%;
+    }
+  }
+}
+
+/* These are meant to be base styles for links */
+.template a {
+    color: $green;
+    &:hover {
+      color: $green;  
+    }
+}
+  
+.featured-list {
+    h3 {
+        margin-bottom: px-to-rem(5px);
+    }
+    @media (min-width: 50em) { //~800px
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        li {
+            flex: 1 0 50%;
+            padding-right: px-to-rem(18px);
+        }
+    }
+}
+
 // .front-page {
 //     padding-top: 20px;
 //     padding-bottom: 40px;
@@ -48,36 +117,3 @@
 // .persona-img {
 //     width: 100%;
 // }
-//convert px value to rem value
-@import "./_variables";
-@import "./connect";
-@function px-to-rem($px, $base:10px){
-  @return ($px / $base) * 1rem;
-}
-
-/* These are meant to be base styles for links */
-.template a {
-  color: $green;
-  &:hover {
-    color: $green;  
-  }
-}
-
-.featured-list {
-
-    h3 {
-        margin-bottom: px-to-rem(5px);
-    }
-
-    @media (min-width: 50em){ //~800px
-        ul {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        li {
-            flex: 1 0 50%;
-            padding-right: px-to-rem(18px);
-        }
-    }
-}
