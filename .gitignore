@@ -28,6 +28,3 @@ app/assets/.DS_Store
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
-
-# IDE related .idea folder
-.idea/
