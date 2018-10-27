@@ -32,19 +32,19 @@ Yes! *She's Coding* is build by the community, for the community. We currently h
 
 	+ Install [Ruby](https://www.ruby-lang.org/en/):
       ```
-      $ rvm install 2.3.1
+      $ rvm install 2.5.3
       ```
 
 	+ Select this version of ruby for use in this project:
       ```
-      $ rvm use 2.3.1
+      $ rvm use 2.5.3
       ```
 
     ##### Set ruby version if you already have rvm installed:
     + Select this version for use:
 
       ```
-      $ rvm use 2.3.1
+      $ rvm use 2.5.3
       ```
 
     ##### **RBENV**
@@ -56,7 +56,7 @@ Yes! *She's Coding* is build by the community, for the community. We currently h
 
 	+ Install [Ruby](https://www.ruby-lang.org/en/):
       ```
-      $ rbenv install 2.3.1
+      $ rbenv install 2.5.3
       ```
 
 	+ Check ruby version:
@@ -64,14 +64,14 @@ Yes! *She's Coding* is build by the community, for the community. We currently h
       $ ruby -v
       ```
    	You should see ruby version printed as result: `ruby 2.3.1p112 (2016-04-26 revision 54768) [x86_64-darwin15]`
-    
-      
+
+
    ##### Set ruby version if you already have rbenv installed:
    + Change your ruby version locally inside shescoding-dot-org repository:
-      
+
       ```
       $ cd shescoding-dot-org
-      $ rbenv local 2.3.1
+      $ rbenv local 2.5.3
       ```
 
 + Install [Postgresql](http://www.postgresql.org/)
@@ -151,7 +151,7 @@ $ chmod +x .git/hooks/pre-commit
 
 ### Running the tests
 
-In order to run the tests, make sure all the gems are installed and the test environment is set up properly with working database. 
+In order to run the tests, make sure all the gems are installed and the test environment is set up properly with working database.
 
 + Set up:
 

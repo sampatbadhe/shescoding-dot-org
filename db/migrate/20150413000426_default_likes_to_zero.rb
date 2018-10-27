@@ -1,4 +1,4 @@
-class DefaultLikesToZero < ActiveRecord::Migration
+class DefaultLikesToZero < ActiveRecord::Migration[4.2]
   def up
     change_column :resources, :likes, :integer, default: 0
     Resource.update_all(likes: 0)
